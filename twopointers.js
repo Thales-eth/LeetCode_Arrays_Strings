@@ -8,6 +8,8 @@
 // Output: true
 // Explanation: "amanaplanacanalpanama" is a palindrome.
 
+// 1) https://leetcode.com/problems/valid-palindrome/
+
 const isPalindrome = (s) => {
     const regex = /[^a-z0-9]/g
     const cleanSentence = s.toLowerCase().replace(regex, "")
@@ -34,7 +36,7 @@ const isPalindrome = (s) => {
 
 // The final sorted array should not be returned by the function, but instead be stored inside the array nums1.To accommodate this, nums1 has a length of m + n, where the first m elements denote the elements that should be merged, and the last n elements are set to 0 and should be ignored.nums2 has a length of n.
 
-
+// 2) https://leetcode.com/problems/merge-sorted-array/
 
 // Example 1:
 
@@ -81,7 +83,7 @@ const merge = (nums1, m, nums2, n) => {
 
 // A subsequence of a string is a new string that is formed from the original string by deleting some(can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., "ace" is a subsequence of "abcde" while "aec" is not).
 
-
+// 3) https://leetcode.com/problems/is-subsequence/
 
 // Example 1:
 
@@ -108,6 +110,8 @@ const isSubsequence = (s, t) => {
 // Write a function that reverses a string.The input string is given as an array of characters s.
 
 // You must do this by modifying the input array in -place with O(1) extra memory.
+
+// 4) https://leetcode.com/problems/reverse-string/submissions/
 
 var reverseString = (s) => {
     let i = 0, j = s.length - 1
@@ -145,6 +149,8 @@ var reverseString = (s) => {
 // Output: [0, 1, 9, 16, 100]
 // Explanation: After squaring, the array becomes[16, 1, 0, 9, 100].
 // After sorting, it becomes[0, 1, 9, 16, 100].
+
+// 5) https://leetcode.com/problems/squares-of-a-sorted-array/description/
 
 const sortedSquares = (nums) => {
     let i = 0
